@@ -21,3 +21,19 @@ if [ -d /opt/local/sbin ]; then
 fi
 
 export PATH MANPATH
+
+# Ingenious way to set $EDITOR
+__() {
+	local -a editors
+	local editor
+	editors=(
+		"emacs -nw"
+		"vim" "vi" 
+		)
+	for editor in $editors; do
+		(( $+commands[$editor[(w)1]] )) && {
+			export EDITOR=$editor
+			break
+		}
+	done
+} && __
