@@ -37,3 +37,10 @@ __() {
 		}
 	done
 } && __
+
+# MANTA setup
+MANTA_URL=https://us-east.manta.joyent.com
+MANTA_USER=cah220
+unset MANTA_SUBUSER # Unless you have subusers
+MANTA_KEY_ID=$(ssh-keygen -l -f $HOME/.ssh/id_rsa.pub | awk '{print $2}')
+export MANTA_URL MANTA_USER MANTA_KEY_ID
