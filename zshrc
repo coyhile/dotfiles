@@ -1,6 +1,13 @@
 PROMPT='%m:%~ %# '
 bindkey -e
 
+# History stuff
+HISTSIZE=10000
+SAVEHIST=10000
+HISTFILE=~/.zsh_history
+setopt INC_APPEND_HISTORY
+export HISTSIZE SAVEHIST HISTFILE
+
 PATH=/usr/bin:/usr/sbin:/sbin/:/bin
 if [ -d /usr/pkg/bin ]; then
 	PATH=/usr/pkg/bin:$PATH
