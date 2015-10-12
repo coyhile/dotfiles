@@ -9,13 +9,13 @@ setopt INC_APPEND_HISTORY
 export HISTSIZE SAVEHIST HISTFILE
 
 PATH=/usr/bin:/usr/sbin:/sbin/:/bin
-if [ -d /usr/pkg/bin ]; then
-	PATH=/usr/pkg/bin:$PATH
-	MANPATH=/usr/pkg/man:$MANPATH
+if [ -d /opt/pkg/bin ]; then
+	PATH=/opt/pkg/bin:$PATH
+	MANPATH=/opt/pkg/man:$MANPATH
 fi
 
-if [ -d /usr/pkg/sbin ]; then
-	PATH=/usr/pkg/sbin:$PATH
+if [ -d /opt/pkg/sbin ]; then
+	PATH=/opt/pkg/sbin:$PATH
 fi
 
 if [ -d /opt/local/bin ]; then
