@@ -34,3 +34,15 @@
 ;(require 'dot-mode)
 (autoload 'dot-mode "dot-mode.el" nil t)
 ;(add-hook 'find-file-hooks 'dot-mode-on)
+
+(autoload 'markdown-mode "markdown-mode.el"
+   "Major mode for editing Markdown files" t)
+;;;(autoload 'gfm-mode "gfm-mode"
+;;;   "Major mode for editing GitHub Flavored Markdown files" t)
+(autoload 'gfm-mode "markdown-mode.el"
+   "Major mode for editing GitHub Flavored Markdown files" t)
+(add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
+(add-to-list 'auto-mode-alist '("\\.markdown\\'" . gfm-mode))
+(add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode))
+;;(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
+;;(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
