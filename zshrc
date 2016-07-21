@@ -51,7 +51,9 @@ MANTA_USER=cah220
 unset MANTA_SUBUSER # Unless you have subusers
 MANTA_KEY_ID=$(ssh-keygen -l -f $HOME/.ssh/id_rsa.pub | awk '{print $2}')
 # change this to use a different DC
-SDC_URL=https://us-east-1.api.joyent.com
-SDC_ACCOUNT=cah220
-SDC_KEY_ID=$(ssh-keygen -l -f $HOME/.ssh/id_rsa.pub | awk '{print $2}')
-export MANTA_URL MANTA_USER MANTA_KEY_ID SDC_ACCOUNT SDC_URL SDC_KEY_ID
+# These SDC* environment variables are no longer needed with the triton tools.
+#SDC_URL=https://us-east-1.api.joyent.com
+#SDC_ACCOUNT=cah220
+#SDC_KEY_ID=$(ssh-keygen -l -f $HOME/.ssh/id_rsa.pub | awk '{print $2}')
+#export MANTA_URL MANTA_USER MANTA_KEY_ID SDC_ACCOUNT SDC_URL SDC_KEY_ID
+export MANTA_URL MANTA_USER MANTA_KEY_ID
