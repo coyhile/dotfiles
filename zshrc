@@ -27,6 +27,10 @@ if [ -d /opt/local/sbin ]; then
 	PATH=/opt/local/sbin:$PATH
 fi
 
+if [ -d /opt/chefdk/bin ]; then
+	PATH=/opt/chefdk/bin:$PATH
+fi
+
 export PATH MANPATH
 
 # Ingenious way to set $EDITOR
