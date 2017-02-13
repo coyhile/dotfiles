@@ -41,8 +41,15 @@
 ;;;   "Major mode for editing GitHub Flavored Markdown files" t)
 (autoload 'gfm-mode "markdown-mode.el"
    "Major mode for editing GitHub Flavored Markdown files" t)
+(autoload 'd-mode "d-mode.el" "Major Mode for Editing DTrace" t) 
+(autoload 'yaml-mode "yaml-mode.el" "Major Mode for Editing YAML" t) 
+(autoload 'multi-web-mode "multi-web-mode.el" "Minor Mode for Web Gunk" t)
+
 (add-to-list 'auto-mode-alist '("README\\.md\\'" . gfm-mode))
 (add-to-list 'auto-mode-alist '("\\.markdown\\'" . gfm-mode))
 (add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode))
+(add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 ;;(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 ;;(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
