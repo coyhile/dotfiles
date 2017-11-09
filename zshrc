@@ -1,3 +1,4 @@
+autoload -U compinit
 PROMPT='%m:%~ %# '
 bindkey -e
 
@@ -61,3 +62,5 @@ MANTA_KEY_ID=$(ssh-keygen -l -f $HOME/.ssh/id_rsa.pub | awk '{print $2}')
 #SDC_KEY_ID=$(ssh-keygen -l -f $HOME/.ssh/id_rsa.pub | awk '{print $2}')
 #export MANTA_URL MANTA_USER MANTA_KEY_ID SDC_ACCOUNT SDC_URL SDC_KEY_ID
 export MANTA_URL MANTA_USER MANTA_KEY_ID
+compinit
+eval $(chef shell-init zsh)
