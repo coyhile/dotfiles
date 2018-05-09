@@ -52,6 +52,7 @@
 (add-to-list 'auto-mode-alist '("\\.md\\'" . gfm-mode))
 (add-to-list 'auto-mode-alist '("\\.yml$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.yaml$" . yaml-mode))
+(add-to-list 'auto-mode-alist '("\\.sls$" . yaml-mode))
 (add-to-list 'auto-mode-alist '("\\.d$" . d-mode))
 ;;(add-to-list 'auto-mode-alist '("\\.markdown\\'" . markdown-mode))
 ;;(add-to-list 'auto-mode-alist '("\\.md\\'" . markdown-mode))
