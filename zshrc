@@ -51,8 +51,8 @@ __() {
 } && __
 
 # MANTA setup
-MANTA_URL=https://us-east.manta.joyent.com
-MANTA_USER=cah220
+MANTA_URL=https://manta.us-east.coyhile.com
+MANTA_USER=hile
 unset MANTA_SUBUSER # Unless you have subusers
 MANTA_KEY_ID=$(ssh-keygen -l -f $HOME/.ssh/id_rsa.pub | awk '{print $2}')
 # change this to use a different DC
