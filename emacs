@@ -27,11 +27,7 @@
     indent-tabs-mode t)
 
 (setq inhibit-startup-message t)
-(autoload 'js2-mode "js2-mode.el" nil t)
-(add-to-list 'auto-mode-alist '("\\.js$" . js2-mode))
-(add-to-list 'auto-mode-alist '("\\.json$" . js2-mode))
 (setq-default sgml-basic-offset 4)
-(setq-default js2-basic-offset 4)
 
 ;(require 'dot-mode)
 (autoload 'dot-mode "dot-mode.el" nil t)
